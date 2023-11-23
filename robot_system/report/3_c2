@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import sys
+
+negative, positive, zero = 0, 0, 0
+
+nums = [ float(e) for e in sys.argv[1:] ]
+for x in nums:
+    if x < 0.0:     negative += 1.0
+    elif x > 0.0:   positive += 1.0
+    else:           zero += 1.0
+print("非負:{} ゼロ:{} 負:{}".format(positive, zero, negative))
+

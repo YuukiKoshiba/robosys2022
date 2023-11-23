@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+
+word = ["a", "b", "c", "d", "e", "f", "g"]
+
+print(word[1::2])

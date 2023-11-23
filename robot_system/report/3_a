@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import sys
+
+y = 0.0
+nums = [ float(e) for e in sys.argv[1:] ]
+for x in nums:
+    if x < 0:
+        y += 1.0
+print(y)
