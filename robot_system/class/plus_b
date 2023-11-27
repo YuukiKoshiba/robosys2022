@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Yuuki Koshiba
+# SPDX-License-Identifier: BSD-3-Clause
+
+
 import sys
 
 x = 0.0
