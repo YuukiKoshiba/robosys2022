@@ -4,14 +4,19 @@
 
 import sys
 
+har = 0
+
 def tonum(s):
     try:
         return int(s)
     except:
         return float(s)
 
-ans = 1
+ans = 0
+
 for line in sys.stdin:
-        ans *= tonum(line)
+        ans += tonum(line)
+        har += 1
 
 print(ans)
+print(har)
