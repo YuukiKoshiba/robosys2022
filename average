@@ -4,19 +4,20 @@
 
 import sys
 
-har = 0
-
 def tonum(s):
     try:
         return int(s)
     except:
         return float(s)
 
-ans = 0
+har = 0
+nmb = 0
+ave = 0
 
 for line in sys.stdin:
-        ans += tonum(line)
-        har += 1
+        har += tonum(line)
+        nmb += 1
 
-print(ans)
-print(har)
+ave = har / nmb
+
+print(ave)
