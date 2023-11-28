@@ -16,6 +16,9 @@ out=$(seq 5 | ./plus)
 out=$(seq 5 | ./multiplication)
 [ "${out}" = 120 ] || ng $LINENO
 
+out=$(seq 5 | ./average)
+[ "${out}" = 3.0 ] || ng $LINENO
+
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
 [ "$?" = 1 ] 	  || ng $LINENO
@@ -32,6 +35,15 @@ out=$(echo あ | ./multiplication)
 [ "${out}" = "" ] || ng $LINENO
 
 out=$(echo | ./multiplication)
+[ "$?" = 1 ] 	  || ng $LINENO
+[ "${out}" = "" ] || ng $LINENO
+
+### STRANGE INPUT ###
+out=$(echo あ | ./average)
+[ "$?" = 1 ] 	  || ng $LINENO
+[ "${out}" = "" ] || ng $LINENO
+
+out=$(echo | ./average)
 [ "$?" = 1 ] 	  || ng $LINENO
 [ "${out}" = "" ] || ng $LINENO
 
