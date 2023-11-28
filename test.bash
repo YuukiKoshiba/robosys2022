@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/bash
 # SPDX-FileCopyrightText: 2022 Yuuki Koshiba
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -10,15 +10,15 @@ ng () {
 res=0
 
 ### I/O TEST ###
-out=$(seq 5 | ./plus)
+out=$(seq 5 | ./multiplication)
 [ "${out}" = 120 ] || ng $LINENO
 
 ### STRANGE INPUT ###
-out=$(echo あ | ./plus)
+out=$(echo あ | ./multiplication)
 [ "$?" = 1 ] 	  || ng $LINENO
 [ "${out}" = "" ] || ng $LINENO
 
-out=$(echo | ./plus)
+out=$(echo | ./multiplication)
 [ "$?" = 1 ] 	  || ng $LINENO
 [ "${out}" = "" ] || ng $LINENO
 
