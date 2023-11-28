@@ -1,9 +1,22 @@
-# plusコマンド
+# plus/multiplication/averageコマンド
 
 ![test](https://github.com/YuukiKoshiba/robosys2022/actions/workflows/test.yml/badge.svg)
 
-標準入力から読み込んだ数字を足す。
 （ロボットシステム学の練習リポジトリ）
+
+## 用途
+* plus >>> 標準入力から読み込んだ数値を足す。
+* multiplication >>> 標準入力から読み込んだ数値を掛ける。
+* average >>> 標準入力から読み込んだ数値の平均を求める。
+
+## 環境
+
+* Ubuntu 20.04
+* Python3
+
+## 使用方法
+* ダウンロード・インストール後、「お好みの数値(複数) | コマンド名」で実行。
+
 
 ## 必要なソフトウェア
 * python
