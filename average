@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Yuuki Koshiba
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+def tonum(s):
+    try:
+        return int(s)
+    except:
+        return float(s)
+
+har = 0
+nmb = 0
+ave = 0
+
+for line in sys.stdin:
+        har += tonum(line)
+        nmb += 1
+
+ave = har / nmb
+
+print(ave)
