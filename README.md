@@ -20,9 +20,9 @@
 <details>
 <summary>実行例</summary>
 
-コマンドプロンプトに「seq 5 | ./plus」と入力。
-実行すると「15」と出力。
-(./plusは使うコマンドに合わせて./multiplication ./averageに変更。) 
+* コマンドプロンプトに「seq 5 | ./plus」と入力。
+* 実行すると「15」と出力。
+* (./plusは使うコマンドに合わせて./multiplication ./averageに変更。) 
 </details>
 
 ## 必要なソフトウェア
