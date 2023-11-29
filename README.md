@@ -17,11 +17,13 @@
 ## 使用方法
 * ダウンロード >>> 「Clone」をクリック後、リンク右のコピーボタンをクリック。
 * インストール >>>  コマンドプロンプトで「Git clone リンク」と入力
-* '''Unix
-seq 5 | ./plus
-'''
-で実行。(./plusは使うコマンドに合わせて./multiplication ./averageに変更。) 
+* <details>
+<summary>実行例</summary>
 
+コマンドプロンプトに「seq 5 | ./plus」と入力。
+実行すると「15」と出力。
+(./plusは使うコマンドに合わせて./multiplication ./averageに変更。) 
+</details>
 
 ## 必要なソフトウェア
 * python
